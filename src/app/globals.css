@@ -1,0 +1,158 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+  :root {
+    --radius: 0.625rem;
+    --background: oklch(0.98 0.005 240); /* Soft lavender-white */
+    --foreground: oklch(0.28 0.02 240); /* Deep calming navy */
+    --card: oklch(1 0 0); /* Pure white for clarity */
+    --card-foreground: oklch(0.28 0.02 240);
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.28 0.02 240);
+    --primary: oklch(0.55 0.08 240); /* Therapeutic blue */
+    --primary-foreground: oklch(0.98 0.005 240);
+    --secondary: oklch(0.82 0.04 300); /* Gentle lavender */
+    --secondary-foreground: oklch(0.28 0.02 240);
+    --muted: oklch(0.94 0.008 240); /* Very light blue-grey */
+    --muted-foreground: oklch(0.55 0.02 240); /* Calming mid-tone */
+    --accent: oklch(0.72 0.06 180); /* Healing teal */
+    --accent-foreground: oklch(0.98 0.005 240);
+    --destructive: oklch(0.65 0.15 25); /* Soft warning coral */
+    --border: oklch(0.9 0.01 240 / 50%); /* Gentle blue border */
+    --input: oklch(0.96 0.008 240); /* Light input background */
+    --ring: oklch(0.55 0.08 240); /* Focus ring matches primary */
+    --chart-1: oklch(0.60 0.10 240); /* Therapeutic blue variations */
+    --chart-2: oklch(0.68 0.08 180); /* Calming teal */
+    --chart-3: oklch(0.75 0.06 300); /* Soft purple */
+    --chart-4: oklch(0.70 0.05 120); /* Gentle sage */
+    --chart-5: oklch(0.65 0.04 60); /* Warm beige */
+    --sidebar: oklch(0.96 0.01 240);
+    --sidebar-foreground: oklch(0.28 0.02 240);
+    --sidebar-primary: oklch(0.55 0.08 240);
+    --sidebar-primary-foreground: oklch(0.98 0.005 240);
+    --sidebar-accent: oklch(0.94 0.008 240);
+    --sidebar-accent-foreground: oklch(0.28 0.02 240);
+    --sidebar-border: oklch(0.90 0.01 240);
+    --sidebar-ring: oklch(0.55 0.08 240);
+  }
+  
+  .dark {
+    --background: oklch(0.12 0.01 240); /* Deep calming navy */
+    --foreground: oklch(0.92 0.008 240); /* Soft light text */
+    --card: oklch(0.16 0.012 240); /* Slightly lighter card */
+    --card-foreground: oklch(0.92 0.008 240);
+    --popover: oklch(0.16 0.012 240);
+    --popover-foreground: oklch(0.92 0.008 240);
+    --primary: oklch(0.68 0.10 240); /* Brighter therapeutic blue */
+    --primary-foreground: oklch(0.12 0.01 240);
+    --secondary: oklch(0.28 0.03 300); /* Muted dark lavender */
+    --secondary-foreground: oklch(0.92 0.008 240);
+    --muted: oklch(0.20 0.01 240); /* Dark muted background */
+    --muted-foreground: oklch(0.68 0.015 240); /* Medium light text */
+    --accent: oklch(0.62 0.08 180); /* Healing teal for dark mode */
+    --accent-foreground: oklch(0.92 0.008 240);
+    --destructive: oklch(0.70 0.12 25); /* Softer warning in dark */
+    --border: oklch(0.28 0.015 240); /* Subtle border */
+    --input: oklch(0.18 0.01 240); /* Dark input background */
+    --ring: oklch(0.68 0.10 240); /* Bright focus ring */
+    --chart-1: oklch(0.65 0.10 240); /* Dark mode chart colors */
+    --chart-2: oklch(0.60 0.08 180);
+    --chart-3: oklch(0.68 0.06 300);
+    --chart-4: oklch(0.62 0.05 120);
+    --chart-5: oklch(0.58 0.04 60);
+    --sidebar: oklch(0.14 0.008 240);
+    --sidebar-foreground: oklch(0.92 0.008 240);
+    --sidebar-primary: oklch(0.68 0.10 240);
+    --sidebar-primary-foreground: oklch(0.12 0.01 240);
+    --sidebar-accent: oklch(0.20 0.01 240);
+    --sidebar-accent-foreground: oklch(0.92 0.008 240);
+    --sidebar-border: oklch(0.28 0.015 240);
+    --sidebar-ring: oklch(0.68 0.10 240);
+  }
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  /* Custom utility classes to remove UI effects without modifying shadcn components */
+  .no-effects {
+    @apply shadow-none transition-none hover:scale-100;
+  }
+  
+  /* Remove all transitions globally for non-shadcn components */
+  .custom-component * {
+    @apply transition-none;
+  }
+  
+  /* Disable hover scale effects */
+  .no-hover-scale {
+    @apply hover:scale-100;
+  }
+  
+  /* Remove shadows */
+  .no-shadow {
+    @apply shadow-none;
+  }
+  
+  /* Remove all transitions */
+  .no-transition {
+    @apply transition-none;
+  }
+  
+  /* Button text truncation utilities */
+  .button-text-truncate {
+    @apply overflow-hidden text-ellipsis whitespace-nowrap;
+  }
+  
+  .button-text-truncate-container {
+    @apply flex items-center justify-between w-full min-w-0;
+  }
+}

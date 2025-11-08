@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "MedicalBusiness"],
+  "name": "Alberta Counselling Services",
+  "url": "https://www.albertacounsellingservices.ca",
+  "image": "https://www.albertacounsellingservices.ca/og-image.jpg",
+  "telephone": "+1 (403) 244-0244",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "317 37 Ave NE #209",
+    "addressLocality": "Calgary",
+    "addressRegion": "AB",
+    "postalCode": "T2E 6P6",
+    "addressCountry": "CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.0447,
+    "longitude": -114.0719
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "areaServed": "CA-AB",
+  "sameAs": [
+    "https://www.facebook.com/yourpage",
+    "https://www.instagram.com/yourhandle",
+    "https://www.linkedin.com/company/yourcompany"
+  ]
+}

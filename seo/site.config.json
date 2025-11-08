@@ -1,0 +1,30 @@
+{
+  "siteUrl": "https://www.albertacounsellingservices.ca/",
+  "siteName": "Alberta Counselling Services",
+  "siteShortName": "ACS",
+  "defaultTitle": "Alberta Counselling Services",
+  "defaultDescription": "Compassionate, evidence-based counselling services in Alberta. Book an appointment today.",
+  "logo": "/assets/logo.png",
+  "email": "mbmoloho@hotmail.com",
+  "telephone": "+1 (403) 244-0244",
+  "priceRange": "$$",
+  "sameAs": [
+    "https://www.facebook.com/albertacounsellingservices",
+    "https://www.instagram.com/yalbertacounsellingservices",
+    "https://www/linkedin.com/company/albertacounsellingservices"
+  ],
+  "address": {
+    "streetAddress": "317 37 Ave NE #209",
+    "addressLocality": "Calgary",
+    "addressRegion": "AB",
+    "postalCode": "T2E 6P6",
+    "addressCountry": "CA"
+  },
+  "geo": {
+    "latitude": 51.0447,
+    "longitude": -114.0719
+  },
+  "openingHours": [
+    { "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:00" }
+  ]
+}
